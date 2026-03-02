@@ -1,7 +1,18 @@
 import React, { useState, useEffect } from 'react';
 
+const FRASES = [
+    'Abriendo portal interdimensional...',
+    'Calibrando el fluzo de Ricktrón...',
+    'Esquivando a la Federación Galáctica...',
+    'Wubba lubba dub dub...',
+    'Consultando con el Consejo de Ricks...',
+    'Evitando Cronenbergs en el servidor...',
+    'Sincronizando con C-137...',
+];
+
 const LoadingScreen = ({ onFinished }) => {
     const [progress, setProgress] = useState(0);
+    const [frase] = useState(() => FRASES[Math.floor(Math.random() * FRASES.length)]);
 
     useEffect(() => {
         const duration = 15000;
@@ -30,18 +41,19 @@ const LoadingScreen = ({ onFinished }) => {
     return (
         <div className="wa-dark-loading">
             <div className="wa-loading-center">
-                <div className="wa-loading-icons">
-                    <span>💬</span>
-                    <span className="dots">..........</span>
-                    <span>💻</span>
-                </div>
+                <img
+                    src="/app_icon.png"
+                    alt="Portal"
+                    className="loading-portal-spin"
+                />
 
                 <div className="wa-progress-container">
                     <div className="wa-progress-bar" style={{ width: `${progress}%` }} />
                 </div>
 
-                <h2 className="wa-loading-title">SquanchApp — Conectando...</h2>
-                <p className="wa-loading-subtitle">🔒 Cifrado de extremo a extremo</p>
+                <h2 className="wa-loading-title">SquanchApp</h2>
+                <p className="wa-loading-subtitle">{frase}</p>
+                <p className="wa-loading-encrypt">🔒 Cifrado de extremo a extremo interdimensional</p>
             </div>
 
             <button className="wa-logout-btn" onClick={handleLogout}>

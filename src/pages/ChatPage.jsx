@@ -29,7 +29,7 @@ const ChatPage = () => {
                     <ChatWindow />
                 </div>
             ) : (
-                <div className="desktop-only-placeholder">
+                <div className="desktop-only-placeholder hide-on-mobile">
                     <span className="placeholder-icon">🛸</span>
                     <h2>SquanchApp</h2>
                     <p>Seleccioná un personaje para chatear</p>
