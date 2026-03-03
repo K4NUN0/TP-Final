@@ -1,6 +1,6 @@
 # SquanchApp 💬🛸
 
-🔗 **[https://tp-final-flame-xi.vercel.app](https://tp-final-flame-xi.vercel.app)**
+🔗 **[https://squanchapp.vercel.app/](https://squanchapp.vercel.app/)**
 
 Clon de WhatsApp Web temático de **Rick and Morty**, desarrollado como Trabajo Práctico Final para Laboratorio de Computación III — UTN (2025).
 
@@ -86,7 +86,7 @@ src/
 
 ---
 
-## Despliegue
+## Deploy
 
 El proyecto está desplegado en Vercel y el código fuente disponible en GitHub.
 
@@ -97,12 +97,6 @@ El proyecto está desplegado en Vercel y el código fuente disponible en GitHub.
 
 ---
 
-## Deploy
-
-Desplegado en **Vercel**: [https://tp-final-flame-xi.vercel.app](https://tp-final-flame-xi.vercel.app)
-
----
-
 ## Autor
 
-**Leonel** — UTN, Laboratorio de Computación III, 2025
+**Leonel Baigorria** 
